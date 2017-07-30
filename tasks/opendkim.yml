@@ -3,6 +3,7 @@
   yum: pkg={{ item }} state=installed
   with_items:
    - opendkim
+   - opendkim-tools
 
 - name: opendkim directory present
   file: path=/etc/opendkim state=directory
